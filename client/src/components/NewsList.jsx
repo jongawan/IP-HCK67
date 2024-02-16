@@ -40,7 +40,7 @@ function NewsList() {
 
 
           <div className="card" key={index}>
-            <h2>{article.headline.main}</h2>
+            <h2 className='text-red'>{article.headline.main}</h2>
             <img src={
               
               article?.multimedia[0] ? 
