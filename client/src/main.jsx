@@ -13,6 +13,7 @@ import WorldNews from './components/WorldNews.jsx';
 import WorldNewsDetail from './components/WorldNewsDetail.jsx';
 import IndonesianNews from './components/IndonesianNews.jsx';
 import IndonesianNewsDetail from './components/IndonesianNewsDetail.jsx';
+import LoginPage from './components/Login.jsx';
 
 
 const router = createBrowserRouter([
@@ -24,6 +25,18 @@ const router = createBrowserRouter([
       <NewsList/>
     </div>
   },
+
+  {
+    path: "/login",
+    element: 
+    <div>
+      <NavBar/>
+      <LoginPage/>
+    </div>
+  },
+
+
+
   {
     path: "/world-news",
     element: 

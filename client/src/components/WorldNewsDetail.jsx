@@ -7,7 +7,10 @@ import { Link, useParams } from 'react-router-dom';
 function WorldNewsDetail (){
     let { id } = useParams();
 
-    const [article, setArticle] = useState({});
+    const [article, setArticle] = useState({
+      snippet:"",
+      web_url:""
+    });
     const [loading, setLoading] = useState(false)
 
 
@@ -59,8 +62,8 @@ console.log(article, "????")
                 "https://www.telegraph.co.uk/content/dam/world-news/2024/02/12/TELEMMGLPICT000366236201_17077625115270_trans_NvBQzQNjv4BqF4WwDpbO-CkdHTTCi9TWzkikPYR0xYwuEBLwP9UFqPg.jpeg?imwidth=480"
   
     )} alt="Ini Gambar GG" style={{width:'100%'}} />
-              <p>{article.snippet}</p>
-                <Link to={`${article.web_url}`}target="_blank">Read Article on The New York Times</Link>
+              <p className="mb-5">{article.snippet}</p>
+                <Link to={`${article.web_url}`}target="_blank">Read Article on NYT</Link>
 
 
               </>}
